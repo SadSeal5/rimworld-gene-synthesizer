@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>SynthesizeGene</defName>
+    <label>synthesize genes</label>
+    <giverClass>SadSeal.GeneSynthesizer.Jobs.WorkGiver_SynthesizeGene</giverClass>
+    <workType>Research</workType>
+    <priorityInType>115</priorityInType>
+    <verb>synthesize gene</verb>
+    <gerund>synthesizing gene at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <canBeDoneByMechs>false</canBeDoneByMechs>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

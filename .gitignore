@@ -1,0 +1,8 @@
+obj/
+bin/
+*/obj/
+*/bin/
+*.pdb
+*.deps.json
+.vs/
+.idea/

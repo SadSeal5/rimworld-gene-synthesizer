@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>HaulNeutroamineToGeneAssembler</defName>
+    <driverClass>SadSeal.GeneSynthesizer.Jobs.JobDriver_HaulNeutroamine</driverClass>
+    <reportString>hauling Neutroamine to TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>SynthesizeGene</defName>
+    <driverClass>SadSeal.GeneSynthesizer.Jobs.JobDriver_SynthesizeGene</driverClass>
+    <reportString>synthesizing gene at TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

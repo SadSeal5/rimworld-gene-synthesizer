@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>SadSeal's Gene Synthesizer</name>
+  <author>SadSeal5 / Ramo</author>
+  <packageId>sadseal.genesynthesizer</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+  </loadAfter>
+  <description>SadSeal's Gene Synthesizer empowers you to synthesize and craft any gene in RimWorld at the Gene Assembler in exchange for Neutroamine.
+
+Features:
+- Craft any gene from Vanilla Biotech and ANY installed mods!
+- Real-time gene browser dialog with search, category filtering, and mod filtering.
+- Displays biostats (complexity, metabolism, archite) and detailed descriptions.
+- Fully customizable in Mod Settings: adjust Neutroamine cost, crafting labor ticks, instant crafting, and Archite capsule rules.
+- Quick presets: Free, Cheap (25), Standard (100), Hardcore (250), or custom values.
+- Seamless pawn workflow: Haul Neutroamine to the assembler, then intellectual pawns perform synthesis to produce a standalone Genepack.
+- Full English and Turkish (Türkçe) localization.</description>
+</ModMetaData>

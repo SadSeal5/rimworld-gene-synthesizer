@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GeneSynthesis_WindowTitle>SadSeal Gen Sentezleyici</GeneSynthesis_WindowTitle>
+  <GeneSynthesis_SettingsHeader>Gen Sentezleyici Ayarları</GeneSynthesis_SettingsHeader>
+  <GeneSynthesis_SettingsDesc>Gen Birleştiricide (Gene Assembler) istenilen genleri sentezlemek için gereken Nötroamin maliyeti, üretim süresi ve kuralları özelleştirin.</GeneSynthesis_SettingsDesc>
+  <GeneSynthesis_Presets>Hızlı Hazır Ayarlar</GeneSynthesis_Presets>
+  <GeneSynthesis_PresetFree>Ücretsiz (0)</GeneSynthesis_PresetFree>
+  <GeneSynthesis_PresetCheap>Ucuz (25)</GeneSynthesis_PresetCheap>
+  <GeneSynthesis_PresetStandard>Standart (100)</GeneSynthesis_PresetStandard>
+  <GeneSynthesis_PresetHardcore>Zorlu (250)</GeneSynthesis_PresetHardcore>
+  <GeneSynthesis_ResetDefaults>Varsayılanlara Sıfırla</GeneSynthesis_ResetDefaults>
+  <GeneSynthesis_ResourceAndWork>Kaynak ve İş Maliyetleri</GeneSynthesis_ResourceAndWork>
+  <GeneSynthesis_NeutroamineCostLabel>Nötroamin Maliyeti</GeneSynthesis_NeutroamineCostLabel>
+  <GeneSynthesis_WorkAmountLabel>İş Miktarı</GeneSynthesis_WorkAmountLabel>
+  <GeneSynthesis_WorkInstantShort>Anında</GeneSynthesis_WorkInstantShort>
+  <GeneSynthesis_RulesAndToggles>Kurallar ve Seçenekler</GeneSynthesis_RulesAndToggles>
+  <GeneSynthesis_InstantCraft>Anında Sentezleme (İş Süresini Atla)</GeneSynthesis_InstantCraft>
+  <GeneSynthesis_InstantCraft_Desc>Etkinleştirildiğinde, Nötroamin makineye taşındığı an gen paketi anında üretilir, kolonicilerin ek iş yapması gerekmez.</GeneSynthesis_InstantCraft_Desc>
+  <GeneSynthesis_AllowArchite>Arkit (Archite) Genlerine İzin Ver</GeneSynthesis_AllowArchite>
+  <GeneSynthesis_AllowArchite_Desc>Arkit genlerinin gen sentezleyici listesinde görünmesine ve üretilebilmesine olanak tanır.</GeneSynthesis_AllowArchite_Desc>
+  <GeneSynthesis_RequireArchiteCapsules>Arkit Genleri İçin Arkit Kapsülü Zorunlu Tut</GeneSynthesis_RequireArchiteCapsules>
+  <GeneSynthesis_RequireArchiteCapsules_Desc>Arkit genlerini üretmek için Nötroamin'e ek olarak Arkit Kapsülü de gerektirir.</GeneSynthesis_RequireArchiteCapsules_Desc>
+  <GeneSynthesis_GizmoSynthesize>Gen Sentezle</GeneSynthesis_GizmoSynthesize>
+  <GeneSynthesis_GizmoSynthesizeDesc>Nötroamin karşılığında istenilen geni seçip üretmek için Gen Sentezleyici penceresini açar.</GeneSynthesis_GizmoSynthesizeDesc>
+  <GeneSynthesis_GizmoCancel>Sentezi İptal Et</GeneSynthesis_GizmoCancel>
+  <GeneSynthesis_GizmoCancelDesc>Devam eden sentez emrini iptal eder ve yüklenmiş olan Nötroaminleri güvenle yere boşaltır.</GeneSynthesis_GizmoCancelDesc>
+  <GeneSynthesis_GizmoDevFinish>Anında Tamamla (Geliştirici)</GeneSynthesis_GizmoDevFinish>
+  <GeneSynthesis_GizmoDevFinishDesc>Mevcut gen sentezini anında tamamlar.</GeneSynthesis_GizmoDevFinishDesc>
+  <GeneSynthesis_TargetGene>Sentezlenen: {0}</GeneSynthesis_TargetGene>
+  <GeneSynthesis_NeutroamineProgress>Nötroamin: {0} / {1}</GeneSynthesis_NeutroamineProgress>
+  <GeneSynthesis_WorkProgress>Sentez İlerlemesi: {0}</GeneSynthesis_WorkProgress>
+  <GeneSynthesis_Finished>Gen sentezi tamamlandı: {0} geni içeren gen paketi üretildi.</GeneSynthesis_Finished>
+  <GeneSynthesis_AllCategories>Tüm Kategoriler</GeneSynthesis_AllCategories>
+  <GeneSynthesis_AllMods>Tüm Modlar</GeneSynthesis_AllMods>
+  <GeneSynthesis_Count>{0} gen bulundu</GeneSynthesis_Count>
+  <GeneSynthesis_HeaderName>Gen Adı</GeneSynthesis_HeaderName>
+  <GeneSynthesis_HeaderCpx>Karmaşıklık</GeneSynthesis_HeaderCpx>
+  <GeneSynthesis_HeaderMet>Metabolizma</GeneSynthesis_HeaderMet>
+  <GeneSynthesis_HeaderArc>Arkit</GeneSynthesis_HeaderArc>
+  <GeneSynthesis_SelectGenePrompt>Ayrıntıları görmek ve sentezi başlatmak için listeden bir gen seçin.</GeneSynthesis_SelectGenePrompt>
+  <GeneSynthesis_StatCpx>Karmaşıklık</GeneSynthesis_StatCpx>
+  <GeneSynthesis_StatMet>Metabolizma</GeneSynthesis_StatMet>
+  <GeneSynthesis_StatArc>Arkit</GeneSynthesis_StatArc>
+  <GeneSynthesis_NoDesc>Açıklama bulunmuyor.</GeneSynthesis_NoDesc>
+  <GeneSynthesis_CostSummary>Gereken Nötroamin: {0}x</GeneSynthesis_CostSummary>
+  <GeneSynthesis_WorkSummary>Üretim Süresi: {0} tick (~{1} sn)</GeneSynthesis_WorkSummary>
+  <GeneSynthesis_WorkInstant>Üretim Süresi: Anında</GeneSynthesis_WorkInstant>
+  <GeneSynthesis_RequiresArchiteCapsule>{0}x Arkit Kapsülü gerektirir</GeneSynthesis_RequiresArchiteCapsule>
+  <GeneSynthesis_StartBtn>Sentezi Başlat</GeneSynthesis_StartBtn>
+  <GeneSynthesis_NoNeutroamine>Kullanılabilir Nötroamin gerekiyor</GeneSynthesis_NoNeutroamine>
+</LanguageData>

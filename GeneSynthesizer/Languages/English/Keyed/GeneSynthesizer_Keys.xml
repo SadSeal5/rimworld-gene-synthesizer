@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GeneSynthesis_WindowTitle>SadSeal's Gene Synthesizer</GeneSynthesis_WindowTitle>
+  <GeneSynthesis_SettingsHeader>Gene Synthesizer Configuration</GeneSynthesis_SettingsHeader>
+  <GeneSynthesis_SettingsDesc>Configure the Neutroamine cost, crafting work duration, and requirements for synthesizing custom genepacks at the Gene Assembler.</GeneSynthesis_SettingsDesc>
+  <GeneSynthesis_Presets>Quick Presets</GeneSynthesis_Presets>
+  <GeneSynthesis_PresetFree>Free (0)</GeneSynthesis_PresetFree>
+  <GeneSynthesis_PresetCheap>Cheap (25)</GeneSynthesis_PresetCheap>
+  <GeneSynthesis_PresetStandard>Standard (100)</GeneSynthesis_PresetStandard>
+  <GeneSynthesis_PresetHardcore>Hardcore (250)</GeneSynthesis_PresetHardcore>
+  <GeneSynthesis_ResetDefaults>Reset to Defaults</GeneSynthesis_ResetDefaults>
+  <GeneSynthesis_ResourceAndWork>Resource &amp; Work Costs</GeneSynthesis_ResourceAndWork>
+  <GeneSynthesis_NeutroamineCostLabel>Neutroamine Cost</GeneSynthesis_NeutroamineCostLabel>
+  <GeneSynthesis_WorkAmountLabel>Work Amount</GeneSynthesis_WorkAmountLabel>
+  <GeneSynthesis_WorkInstantShort>Instant</GeneSynthesis_WorkInstantShort>
+  <GeneSynthesis_RulesAndToggles>Rules &amp; Options</GeneSynthesis_RulesAndToggles>
+  <GeneSynthesis_InstantCraft>Instant Synthesis (Skip Work)</GeneSynthesis_InstantCraft>
+  <GeneSynthesis_InstantCraft_Desc>When enabled, the genepack is produced immediately once Neutroamine is loaded into the assembler without requiring pawn labor.</GeneSynthesis_InstantCraft_Desc>
+  <GeneSynthesis_AllowArchite>Allow Archite Genes</GeneSynthesis_AllowArchite>
+  <GeneSynthesis_AllowArchite_Desc>Allows archite genes to appear and be craftable in the Gene Synthesizer.</GeneSynthesis_AllowArchite_Desc>
+  <GeneSynthesis_RequireArchiteCapsules>Require Archite Capsules for Archite Genes</GeneSynthesis_RequireArchiteCapsules>
+  <GeneSynthesis_RequireArchiteCapsules_Desc>Requires colonists to load Archite Capsules in addition to Neutroamine for archite genes.</GeneSynthesis_RequireArchiteCapsules_Desc>
+  <GeneSynthesis_GizmoSynthesize>Synthesize Gene</GeneSynthesis_GizmoSynthesize>
+  <GeneSynthesis_GizmoSynthesizeDesc>Open the Gene Synthesizer dialog to choose and craft any gene in exchange for Neutroamine.</GeneSynthesis_GizmoSynthesizeDesc>
+  <GeneSynthesis_GizmoCancel>Cancel Synthesis</GeneSynthesis_GizmoCancel>
+  <GeneSynthesis_GizmoCancelDesc>Cancels the ongoing synthesis order and safely unloads any loaded Neutroamine.</GeneSynthesis_GizmoCancelDesc>
+  <GeneSynthesis_GizmoDevFinish>Instantly Finish (Dev)</GeneSynthesis_GizmoDevFinish>
+  <GeneSynthesis_GizmoDevFinishDesc>Instantly completes the current gene synthesis.</GeneSynthesis_GizmoDevFinishDesc>
+  <GeneSynthesis_TargetGene>Synthesizing: {0}</GeneSynthesis_TargetGene>
+  <GeneSynthesis_NeutroamineProgress>Neutroamine: {0} / {1}</GeneSynthesis_NeutroamineProgress>
+  <GeneSynthesis_WorkProgress>Synthesis Progress: {0}</GeneSynthesis_WorkProgress>
+  <GeneSynthesis_Finished>Gene synthesis finished: created genepack with {0}.</GeneSynthesis_Finished>
+  <GeneSynthesis_AllCategories>All Categories</GeneSynthesis_AllCategories>
+  <GeneSynthesis_AllMods>All Mods</GeneSynthesis_AllMods>
+  <GeneSynthesis_Count>{0} genes found</GeneSynthesis_Count>
+  <GeneSynthesis_HeaderName>Gene Name</GeneSynthesis_HeaderName>
+  <GeneSynthesis_HeaderCpx>Complexity</GeneSynthesis_HeaderCpx>
+  <GeneSynthesis_HeaderMet>Metabolism</GeneSynthesis_HeaderMet>
+  <GeneSynthesis_HeaderArc>Archite</GeneSynthesis_HeaderArc>
+  <GeneSynthesis_SelectGenePrompt>Select a gene from the list to view details and begin synthesis.</GeneSynthesis_SelectGenePrompt>
+  <GeneSynthesis_StatCpx>Complexity</GeneSynthesis_StatCpx>
+  <GeneSynthesis_StatMet>Metabolism</GeneSynthesis_StatMet>
+  <GeneSynthesis_StatArc>Archite</GeneSynthesis_StatArc>
+  <GeneSynthesis_NoDesc>No description available.</GeneSynthesis_NoDesc>
+  <GeneSynthesis_CostSummary>Required Neutroamine: {0}x</GeneSynthesis_CostSummary>
+  <GeneSynthesis_WorkSummary>Work Duration: {0} ticks (~{1}s)</GeneSynthesis_WorkSummary>
+  <GeneSynthesis_WorkInstant>Work Duration: Instant</GeneSynthesis_WorkInstant>
+  <GeneSynthesis_RequiresArchiteCapsule>Requires {0}x Archite Capsule(s)</GeneSynthesis_RequiresArchiteCapsule>
+  <GeneSynthesis_StartBtn>Start Synthesis</GeneSynthesis_StartBtn>
+  <GeneSynthesis_NoNeutroamine>Need unreserved Neutroamine</GeneSynthesis_NoNeutroamine>
+</LanguageData>
