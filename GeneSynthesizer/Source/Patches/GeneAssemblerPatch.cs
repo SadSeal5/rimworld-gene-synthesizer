@@ -4,24 +4,31 @@ using Verse;
 
 namespace SadSeal.GeneSynthesizer.Patches
 {
-    [HarmonyPatch(typeof(Building_GeneAssembler), nameof(Building_GeneAssembler.SpawnSetup))]
+    [HarmonyPatch(typeof(Building_GeneAssembler), nameof(Building_GeneAssembler.PostPostMake))]
     public static class GeneAssemblerPatch
     {
+        [HarmonyPrepare]
+        public static bool Prepare() => ModLister.BiotechInstalled;
+
         [HarmonyPostfix]
         public static void Postfix(Building_GeneAssembler __instance)
         {
-            if (__instance == null) return;
+            EnsureCompOnInstance(__instance);
+        }
 
-            EnsureDefHasComp(__instance.def);
+        public static void EnsureCompOnInstance(Building_GeneAssembler instance)
+        {
+            if (instance == null) return;
+            EnsureDefHasComp(instance.def);
 
-            if (__instance.GetComp<CompGeneSynthesizer>() == null)
+            if (instance.GetComp<CompGeneSynthesizer>() == null)
             {
                 CompGeneSynthesizer comp = new CompGeneSynthesizer
                 {
-                    parent = __instance
+                    parent = instance
                 };
                 comp.Initialize(new CompProperties_GeneSynthesizer());
-                __instance.AllComps.Add(comp);
+                instance.AllComps.Add(comp);
             }
         }
 
@@ -43,6 +50,22 @@ namespace SadSeal.GeneSynthesizer.Patches
             }
 
             def.comps.Add(new CompProperties_GeneSynthesizer());
+        }
+    }
+
+    [HarmonyPatch(typeof(Building_GeneAssembler), nameof(Building_GeneAssembler.ExposeData))]
+    public static class GeneAssemblerExposePatch
+    {
+        [HarmonyPrepare]
+        public static bool Prepare() => ModLister.BiotechInstalled;
+
+        [HarmonyPostfix]
+        public static void Postfix(Building_GeneAssembler __instance)
+        {
+            if (Scribe.mode == LoadSaveMode.LoadingVars || Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                GeneAssemblerPatch.EnsureCompOnInstance(__instance);
+            }
         }
     }
 
