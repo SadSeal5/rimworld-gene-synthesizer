@@ -20,24 +20,30 @@
   <GeneSynthesis_AllowArchite_Desc>Arkit genlerinin gen sentezleyici listesinde görünmesine ve üretilebilmesine olanak tanır.</GeneSynthesis_AllowArchite_Desc>
   <GeneSynthesis_RequireArchiteCapsules>Arkit Genleri İçin Arkit Kapsülü Zorunlu Tut</GeneSynthesis_RequireArchiteCapsules>
   <GeneSynthesis_RequireArchiteCapsules_Desc>Arkit genlerini üretmek için Nötroamin'e ek olarak Arkit Kapsülü de gerektirir.</GeneSynthesis_RequireArchiteCapsules_Desc>
-  <GeneSynthesis_GizmoSynthesize>Gen Sentezle</GeneSynthesis_GizmoSynthesize>
-  <GeneSynthesis_GizmoSynthesizeDesc>Nötroamin karşılığında istenilen geni seçip üretmek için Gen Sentezleyici penceresini açar.</GeneSynthesis_GizmoSynthesizeDesc>
-  <GeneSynthesis_GizmoCancel>Sentezi İptal Et</GeneSynthesis_GizmoCancel>
+  <GeneSynthesis_GizmoSynthesize>Gen / Tür Sentezle</GeneSynthesis_GizmoSynthesize>
+  <GeneSynthesis_GizmoSynthesizeDesc>Nötroamin karşılığında genleri veya hazır tür şablonlarını seçip üretmek için Gen Sentezleyici penceresini açar.</GeneSynthesis_GizmoSynthesizeDesc>
+  <GeneSynthesis_GizmoCancel>Mevcut Emri İptal Et</GeneSynthesis_GizmoCancel>
   <GeneSynthesis_GizmoCancelDesc>Devam eden sentez emrini iptal eder ve yüklenmiş olan Nötroaminleri güvenle yere boşaltır.</GeneSynthesis_GizmoCancelDesc>
+  <GeneSynthesis_GizmoClearAll>Tüm Emirleri Temizle</GeneSynthesis_GizmoClearAll>
+  <GeneSynthesis_GizmoClearAllDesc>Kuyruktaki tüm sentez emirlerini iptal eder ve yüklenmiş Nötroaminleri yere boşaltır.</GeneSynthesis_GizmoClearAllDesc>
   <GeneSynthesis_GizmoDevFinish>Anında Tamamla (Geliştirici)</GeneSynthesis_GizmoDevFinish>
   <GeneSynthesis_GizmoDevFinishDesc>Mevcut gen sentezini anında tamamlar.</GeneSynthesis_GizmoDevFinishDesc>
   <GeneSynthesis_TargetGene>Sentezlenen: {0}</GeneSynthesis_TargetGene>
   <GeneSynthesis_NeutroamineProgress>Nötroamin: {0} / {1}</GeneSynthesis_NeutroamineProgress>
   <GeneSynthesis_WorkProgress>Sentez İlerlemesi: {0}</GeneSynthesis_WorkProgress>
-  <GeneSynthesis_Finished>Gen sentezi tamamlandı: {0} geni içeren gen paketi üretildi.</GeneSynthesis_Finished>
+  <GeneSynthesis_Finished>Gen sentezi tamamlandı: {0} içeren gen paketi üretildi.</GeneSynthesis_Finished>
+  <GeneSynthesis_XenotypeFinished>Gen sentezi tamamlandı: {0} için birleşik gen paketi üretildi.</GeneSynthesis_XenotypeFinished>
+  <GeneSynthesis_QueueProgress>Kuyruk: {0} / {1}</GeneSynthesis_QueueProgress>
   <GeneSynthesis_AllCategories>Tüm Kategoriler</GeneSynthesis_AllCategories>
   <GeneSynthesis_AllMods>Tüm Modlar</GeneSynthesis_AllMods>
   <GeneSynthesis_Count>{0} gen bulundu</GeneSynthesis_Count>
-  <GeneSynthesis_HeaderName>Gen Adı</GeneSynthesis_HeaderName>
+  <GeneSynthesis_HeaderName>Ad</GeneSynthesis_HeaderName>
   <GeneSynthesis_HeaderCpx>Karmaşıklık</GeneSynthesis_HeaderCpx>
   <GeneSynthesis_HeaderMet>Metabolizma</GeneSynthesis_HeaderMet>
   <GeneSynthesis_HeaderArc>Arkit</GeneSynthesis_HeaderArc>
+  <GeneSynthesis_HeaderGenesCount>Genler</GeneSynthesis_HeaderGenesCount>
   <GeneSynthesis_SelectGenePrompt>Ayrıntıları görmek ve sentezi başlatmak için listeden bir gen seçin.</GeneSynthesis_SelectGenePrompt>
+  <GeneSynthesis_SelectXenotypePrompt>İçerdiği genleri incelemek ve üretim emirleri vermek için bir tür seçin.</GeneSynthesis_SelectXenotypePrompt>
   <GeneSynthesis_StatCpx>Karmaşıklık</GeneSynthesis_StatCpx>
   <GeneSynthesis_StatMet>Metabolizma</GeneSynthesis_StatMet>
   <GeneSynthesis_StatArc>Arkit</GeneSynthesis_StatArc>
@@ -47,5 +53,33 @@
   <GeneSynthesis_WorkInstant>Üretim Süresi: Anında</GeneSynthesis_WorkInstant>
   <GeneSynthesis_RequiresArchiteCapsule>{0}x Arkit Kapsülü gerektirir</GeneSynthesis_RequiresArchiteCapsule>
   <GeneSynthesis_StartBtn>Sentezi Başlat</GeneSynthesis_StartBtn>
+  <GeneSynthesis_AddToQueue>Kuyruğa Ekle</GeneSynthesis_AddToQueue>
+  <GeneSynthesis_OrderAdded>{0} sentez kuyruğuna eklendi.</GeneSynthesis_OrderAdded>
+  <GeneSynthesis_BatchEnqueued>{1} için {0} gen kuyruğa eklendi.</GeneSynthesis_BatchEnqueued>
+  <GeneSynthesis_CombinedEnqueued>{0} için birleşik gen paketi kuyruğa eklendi.</GeneSynthesis_CombinedEnqueued>
   <GeneSynthesis_NoNeutroamine>Kullanılabilir Nötroamin gerekiyor</GeneSynthesis_NoNeutroamine>
+
+  <!-- Tabs & Xenotypes -->
+  <GeneSynthesis_TabGenes>Tekil Genler</GeneSynthesis_TabGenes>
+  <GeneSynthesis_TabXenotypes>Türler ve Hazır Ayarlar</GeneSynthesis_TabXenotypes>
+  <GeneSynthesis_TabQueue>Sentez Kuyruğu</GeneSynthesis_TabQueue>
+  <GeneSynthesis_TabQueueCount>Kuyruk ({0})</GeneSynthesis_TabQueueCount>
+  <GeneSynthesis_AllXenotypesCount>{0} tür bulundu</GeneSynthesis_AllXenotypesCount>
+  <GeneSynthesis_ConstituentGenes>İçerdiği Genler ({0})</GeneSynthesis_ConstituentGenes>
+  <GeneSynthesis_InheritableGermline>Kalıtsal (Germline)</GeneSynthesis_InheritableGermline>
+  <GeneSynthesis_InheritableXenogerm>Ksenogen (Kalıtsal Olmayan)</GeneSynthesis_InheritableXenogerm>
+  <GeneSynthesis_QueueAllGenes>Tüm Genleri Kuyruğa Ekle ({0})</GeneSynthesis_QueueAllGenes>
+  <GeneSynthesis_CraftXenotypePack>Birleşik Gen Paketi Üret</GeneSynthesis_CraftXenotypePack>
+  <GeneSynthesis_CombinedPack>Birleşik Paket</GeneSynthesis_CombinedPack>
+
+  <!-- Queue Management -->
+  <GeneSynthesis_QueueTitle>Aktif Sentez Kuyruğu ({0} emir)</GeneSynthesis_QueueTitle>
+  <GeneSynthesis_ClearQueue>Tüm Kuyruğu Temizle</GeneSynthesis_ClearQueue>
+  <GeneSynthesis_QueueEmpty>Sentez kuyruğu şu anda boş. Emir eklemek için bir gen veya hazır tür seçin.</GeneSynthesis_QueueEmpty>
+  <GeneSynthesis_QueueStatusActive>AKTİF</GeneSynthesis_QueueStatusActive>
+  <GeneSynthesis_QueueStatusWaiting>BEKLEMEDE</GeneSynthesis_QueueStatusWaiting>
+  <GeneSynthesis_QueueHaulingProgress>Yükleniyor: {0} / {1} Nötroamin</GeneSynthesis_QueueHaulingProgress>
+  <GeneSynthesis_QueueWorkProgress>İş: {0}</GeneSynthesis_QueueWorkProgress>
+  <GeneSynthesis_QueueCombinedDetails>{0} genli birleşik paket • Maliyet: {1}x Nötroamin</GeneSynthesis_QueueCombinedDetails>
+  <GeneSynthesis_QueueSingleDetails>Tekil gen • Maliyet: {0}x Nötroamin</GeneSynthesis_QueueSingleDetails>
 </LanguageData>

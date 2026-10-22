@@ -11,7 +11,16 @@
 ## ✨ Features
 
 * **🔬 Craft Any Gene:** Browse and synthesize any gene from vanilla Biotech or modded xenotypes (Alpha Genes, Biotech Expanded, etc.) without waiting for rare trader RNG.
-* **📦 Neutroamine Currency:** Default cost of 100 Neutroamine per gene, fully configurable from 0 to 1,000.
+* **👥 Xenotype Presets & Batch Crafting:**
+  * Select any xenotype preset (Sanguophage, Dirtmole, Hussar, Genie, Impid, Neanderthal, etc.) or any modded xenotype.
+  * **Batch Queue:** Queue all constituent genes of a xenotype individually with one click.
+  * **Combined Genepack:** Craft a single all-in-one genepack containing all genes of the chosen xenotype.
+  * Inspect constituent genes, germline/xenogerm status, total complexity, metabolism, and archite costs.
+* **📋 Multi-Order Synthesis Queue:**
+  * Queue multiple genes or xenotype orders consecutively.
+  * Real-time queue tab displaying active progress, waiting orders, and hauling status.
+  * Delete specific orders or clear the entire queue at any time.
+* **📦 Neutroamine Currency:** Configurable Neutroamine cost per gene from 0 to 1,000 (default: 100).
 * **🔍 Search & Filter Dialog:** Real-time text search, category filters, and mod origin filters with biostats (complexity, metabolism, archite capsules) preview.
 * **⚙️ In-Depth Mod Settings:**
   * Adjust required Neutroamine cost.
@@ -21,12 +30,13 @@
   * Toggle Archite capsule requirements for archite genes.
   * One-click presets: *Free*, *Cheap (25)*, *Standard (100)*, *Hardcore (250)*, and *Reset to Defaults*.
 * **👷 Fully Autonomous Colonist Workflow:**
-  1. Select a gene to synthesize at any powered Gene Assembler.
+  1. Select a gene or xenotype preset to synthesize at any powered Gene Assembler.
   2. Haulers bring required Neutroamine to the machine.
   3. Researchers work at the assembler until synthesis finishes.
   4. The finished Genepack drops directly beside the assembler!
+  5. The machine automatically moves to the next order in the queue!
 * **🛡️ Safe Cancellation & Dev Tools:**
-  * Cancel synthesis anytime to safely drop all loaded Neutroamine.
+  * Cancel current order or clear the entire queue anytime to safely drop all loaded Neutroamine.
   * Dev-mode 1-click instant completion button.
 * **🌐 Multilingual:** Complete English and Turkish (*Türkçe*) localization.
 
@@ -35,10 +45,12 @@
 ## 🎮 How to Use
 
 1. Build and power a standard **Gene Assembler** (`Building_GeneAssembler`).
-2. Click the assembler and select the gizmo **"Synthesize Gene" / "Gen Sentezle"**.
-3. Use the dialog to search or filter genes by mod or category.
-4. Review the stats and click **"Start Synthesis"**.
-5. Colonists will automatically haul the Neutroamine and synthesize your genepack.
+2. Click the assembler and select the gizmo **"Synthesize Gene / Presets" / "Gen / Tür Sentezle"**.
+3. Choose from the three navigation tabs:
+   * **🧬 Single Genes:** Search and filter individual genes, then start synthesis or add to queue.
+   * **👥 Xenotypes & Presets:** Browse vanilla or modded xenotypes, preview all their genes, and either queue all genes individually or craft a combined genepack.
+   * **📋 Synthesis Queue:** View active order progress, waiting orders, and manage queued items.
+4. Colonists will automatically haul the Neutroamine and synthesize your genepacks sequentially.
 
 ---
 

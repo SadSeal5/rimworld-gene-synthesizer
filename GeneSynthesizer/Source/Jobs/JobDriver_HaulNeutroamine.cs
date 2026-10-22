@@ -34,8 +34,8 @@ namespace SadSeal.GeneSynthesizer.Jobs
                 Thing building = job.GetTarget(AssemblerIndex).Thing;
                 if (building == null) return true;
                 CompGeneSynthesizer comp = building.TryGetComp<CompGeneSynthesizer>();
-                if (comp == null || !comp.IsSynthesizing) return true;
-                if (comp.innerContainer.TotalStackCount >= comp.NeutroamineCost) return true;
+                if (comp == null || !comp.IsSynthesizing || comp.CurrentOrder == null) return true;
+                if (comp.innerContainer.TotalStackCount >= comp.CurrentOrder.NeutroamineCost) return true;
                 return false;
             });
 
@@ -54,18 +54,18 @@ namespace SadSeal.GeneSynthesizer.Jobs
                 {
                     Thing building = job.GetTarget(AssemblerIndex).Thing;
                     CompGeneSynthesizer comp = building?.TryGetComp<CompGeneSynthesizer>();
-                    if (comp != null)
+                    if (comp != null && comp.CurrentOrder != null)
                     {
-                        int needed = comp.NeutroamineCost - comp.innerContainer.TotalStackCount;
+                        int needed = comp.CurrentOrder.NeutroamineCost - comp.innerContainer.TotalStackCount;
                         int transfer = Mathf.Min(carried.stackCount, needed);
                         if (transfer > 0)
                         {
                             pawn.carryTracker.innerContainer.TryTransferToContainer(carried, comp.innerContainer, transfer);
                         }
 
-                        if (comp.innerContainer.TotalStackCount >= comp.NeutroamineCost && comp.WorkRequired <= 0f)
+                        if (comp.innerContainer.TotalStackCount >= comp.CurrentOrder.NeutroamineCost && comp.CurrentOrder.WorkRequired <= 0f)
                         {
-                            comp.FinishSynthesis();
+                            comp.FinishCurrentOrder();
                         }
                     }
                 }

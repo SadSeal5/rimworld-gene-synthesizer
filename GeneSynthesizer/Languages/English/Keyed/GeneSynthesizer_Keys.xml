@@ -20,24 +20,30 @@
   <GeneSynthesis_AllowArchite_Desc>Allows archite genes to appear and be craftable in the Gene Synthesizer.</GeneSynthesis_AllowArchite_Desc>
   <GeneSynthesis_RequireArchiteCapsules>Require Archite Capsules for Archite Genes</GeneSynthesis_RequireArchiteCapsules>
   <GeneSynthesis_RequireArchiteCapsules_Desc>Requires colonists to load Archite Capsules in addition to Neutroamine for archite genes.</GeneSynthesis_RequireArchiteCapsules_Desc>
-  <GeneSynthesis_GizmoSynthesize>Synthesize Gene</GeneSynthesis_GizmoSynthesize>
-  <GeneSynthesis_GizmoSynthesizeDesc>Open the Gene Synthesizer dialog to choose and craft any gene in exchange for Neutroamine.</GeneSynthesis_GizmoSynthesizeDesc>
-  <GeneSynthesis_GizmoCancel>Cancel Synthesis</GeneSynthesis_GizmoCancel>
-  <GeneSynthesis_GizmoCancelDesc>Cancels the ongoing synthesis order and safely unloads any loaded Neutroamine.</GeneSynthesis_GizmoCancelDesc>
+  <GeneSynthesis_GizmoSynthesize>Synthesize Gene / Presets</GeneSynthesis_GizmoSynthesize>
+  <GeneSynthesis_GizmoSynthesizeDesc>Open the Gene Synthesizer dialog to choose and craft genes or ready xenotype presets in exchange for Neutroamine.</GeneSynthesis_GizmoSynthesizeDesc>
+  <GeneSynthesis_GizmoCancel>Cancel Current Order</GeneSynthesis_GizmoCancel>
+  <GeneSynthesis_GizmoCancelDesc>Cancels the active synthesis order and safely unloads any loaded Neutroamine.</GeneSynthesis_GizmoCancelDesc>
+  <GeneSynthesis_GizmoClearAll>Clear All Orders</GeneSynthesis_GizmoClearAll>
+  <GeneSynthesis_GizmoClearAllDesc>Cancels all queued synthesis orders and unloads any loaded Neutroamine.</GeneSynthesis_GizmoClearAllDesc>
   <GeneSynthesis_GizmoDevFinish>Instantly Finish (Dev)</GeneSynthesis_GizmoDevFinish>
   <GeneSynthesis_GizmoDevFinishDesc>Instantly completes the current gene synthesis.</GeneSynthesis_GizmoDevFinishDesc>
   <GeneSynthesis_TargetGene>Synthesizing: {0}</GeneSynthesis_TargetGene>
   <GeneSynthesis_NeutroamineProgress>Neutroamine: {0} / {1}</GeneSynthesis_NeutroamineProgress>
   <GeneSynthesis_WorkProgress>Synthesis Progress: {0}</GeneSynthesis_WorkProgress>
   <GeneSynthesis_Finished>Gene synthesis finished: created genepack with {0}.</GeneSynthesis_Finished>
+  <GeneSynthesis_XenotypeFinished>Gene synthesis finished: created combined xenotype genepack for {0}.</GeneSynthesis_XenotypeFinished>
+  <GeneSynthesis_QueueProgress>Queue: {0} of {1}</GeneSynthesis_QueueProgress>
   <GeneSynthesis_AllCategories>All Categories</GeneSynthesis_AllCategories>
   <GeneSynthesis_AllMods>All Mods</GeneSynthesis_AllMods>
   <GeneSynthesis_Count>{0} genes found</GeneSynthesis_Count>
-  <GeneSynthesis_HeaderName>Gene Name</GeneSynthesis_HeaderName>
+  <GeneSynthesis_HeaderName>Name</GeneSynthesis_HeaderName>
   <GeneSynthesis_HeaderCpx>Complexity</GeneSynthesis_HeaderCpx>
   <GeneSynthesis_HeaderMet>Metabolism</GeneSynthesis_HeaderMet>
   <GeneSynthesis_HeaderArc>Archite</GeneSynthesis_HeaderArc>
+  <GeneSynthesis_HeaderGenesCount>Genes</GeneSynthesis_HeaderGenesCount>
   <GeneSynthesis_SelectGenePrompt>Select a gene from the list to view details and begin synthesis.</GeneSynthesis_SelectGenePrompt>
+  <GeneSynthesis_SelectXenotypePrompt>Select a xenotype preset to preview constituent genes and enqueue crafting orders.</GeneSynthesis_SelectXenotypePrompt>
   <GeneSynthesis_StatCpx>Complexity</GeneSynthesis_StatCpx>
   <GeneSynthesis_StatMet>Metabolism</GeneSynthesis_StatMet>
   <GeneSynthesis_StatArc>Archite</GeneSynthesis_StatArc>
@@ -47,5 +53,33 @@
   <GeneSynthesis_WorkInstant>Work Duration: Instant</GeneSynthesis_WorkInstant>
   <GeneSynthesis_RequiresArchiteCapsule>Requires {0}x Archite Capsule(s)</GeneSynthesis_RequiresArchiteCapsule>
   <GeneSynthesis_StartBtn>Start Synthesis</GeneSynthesis_StartBtn>
+  <GeneSynthesis_AddToQueue>Add to Queue</GeneSynthesis_AddToQueue>
+  <GeneSynthesis_OrderAdded>Added {0} to the synthesis queue.</GeneSynthesis_OrderAdded>
+  <GeneSynthesis_BatchEnqueued>Enqueued {0} genes for {1}.</GeneSynthesis_BatchEnqueued>
+  <GeneSynthesis_CombinedEnqueued>Enqueued combined pack for {0}.</GeneSynthesis_CombinedEnqueued>
   <GeneSynthesis_NoNeutroamine>Need unreserved Neutroamine</GeneSynthesis_NoNeutroamine>
+
+  <!-- Tabs & Xenotypes -->
+  <GeneSynthesis_TabGenes>Single Genes</GeneSynthesis_TabGenes>
+  <GeneSynthesis_TabXenotypes>Xenotypes &amp; Presets</GeneSynthesis_TabXenotypes>
+  <GeneSynthesis_TabQueue>Synthesis Queue</GeneSynthesis_TabQueue>
+  <GeneSynthesis_TabQueueCount>Queue ({0})</GeneSynthesis_TabQueueCount>
+  <GeneSynthesis_AllXenotypesCount>{0} xenotypes found</GeneSynthesis_AllXenotypesCount>
+  <GeneSynthesis_ConstituentGenes>Constituent Genes ({0})</GeneSynthesis_ConstituentGenes>
+  <GeneSynthesis_InheritableGermline>Germline (Inheritable)</GeneSynthesis_InheritableGermline>
+  <GeneSynthesis_InheritableXenogerm>Xenogerm (Non-inheritable)</GeneSynthesis_InheritableXenogerm>
+  <GeneSynthesis_QueueAllGenes>Queue All Genes ({0})</GeneSynthesis_QueueAllGenes>
+  <GeneSynthesis_CraftXenotypePack>Craft Combined Genepack</GeneSynthesis_CraftXenotypePack>
+  <GeneSynthesis_CombinedPack>Combined Pack</GeneSynthesis_CombinedPack>
+
+  <!-- Queue Management -->
+  <GeneSynthesis_QueueTitle>Active Synthesis Queue ({0} orders)</GeneSynthesis_QueueTitle>
+  <GeneSynthesis_ClearQueue>Clear Entire Queue</GeneSynthesis_ClearQueue>
+  <GeneSynthesis_QueueEmpty>The synthesis queue is currently empty. Select a gene or xenotype preset to enqueue orders.</GeneSynthesis_QueueEmpty>
+  <GeneSynthesis_QueueStatusActive>ACTIVE</GeneSynthesis_QueueStatusActive>
+  <GeneSynthesis_QueueStatusWaiting>WAITING</GeneSynthesis_QueueStatusWaiting>
+  <GeneSynthesis_QueueHaulingProgress>Loading: {0} / {1} Neutroamine</GeneSynthesis_QueueHaulingProgress>
+  <GeneSynthesis_QueueWorkProgress>Work: {0}</GeneSynthesis_QueueWorkProgress>
+  <GeneSynthesis_QueueCombinedDetails>Combined pack with {0} genes • Cost: {1}x Neutroamine</GeneSynthesis_QueueCombinedDetails>
+  <GeneSynthesis_QueueSingleDetails>Single gene • Cost: {0}x Neutroamine</GeneSynthesis_QueueSingleDetails>
 </LanguageData>

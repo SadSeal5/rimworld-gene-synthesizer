@@ -24,8 +24,8 @@ namespace SadSeal.GeneSynthesizer.Jobs
                 Thing building = job.GetTarget(AssemblerIndex).Thing;
                 if (building == null) return true;
                 CompGeneSynthesizer comp = building.TryGetComp<CompGeneSynthesizer>();
-                if (comp == null || !comp.IsSynthesizing || comp.TargetGene == null) return true;
-                if (comp.innerContainer.TotalStackCount < comp.NeutroamineCost) return true;
+                if (comp == null || !comp.IsSynthesizing || comp.CurrentOrder == null) return true;
+                if (comp.innerContainer.TotalStackCount < comp.CurrentOrder.NeutroamineCost) return true;
                 CompPowerTrader power = building.TryGetComp<CompPowerTrader>();
                 if (power != null && !power.PowerOn) return true;
                 return false;
@@ -43,20 +43,20 @@ namespace SadSeal.GeneSynthesizer.Jobs
                 Pawn actor = work.actor;
                 Thing building = job.GetTarget(AssemblerIndex).Thing;
                 CompGeneSynthesizer comp = building?.TryGetComp<CompGeneSynthesizer>();
-                if (comp == null || !comp.IsSynthesizing)
+                if (comp == null || !comp.IsSynthesizing || comp.CurrentOrder == null)
                 {
                     actor.jobs.EndCurrentJob(JobCondition.Incompletable);
                     return;
                 }
 
                 float speed = actor.GetStatValue(StatDefOf.ResearchSpeed);
-                comp.WorkDone += speed;
+                comp.CurrentOrder.WorkDone += speed;
                 actor.skills?.Learn(SkillDefOf.Intellectual, 0.05f);
                 actor.GainComfortFromCellIfPossible(1);
 
-                if (comp.WorkDone >= comp.WorkRequired)
+                if (comp.CurrentOrder.WorkDone >= comp.CurrentOrder.WorkRequired)
                 {
-                    comp.FinishSynthesis();
+                    comp.FinishCurrentOrder();
                     actor.jobs.EndCurrentJob(JobCondition.Succeeded);
                 }
             };
@@ -66,8 +66,8 @@ namespace SadSeal.GeneSynthesizer.Jobs
             {
                 Thing building = job.GetTarget(AssemblerIndex).Thing;
                 CompGeneSynthesizer comp = building?.TryGetComp<CompGeneSynthesizer>();
-                if (comp == null || comp.WorkRequired <= 0f) return 1f;
-                return Mathf.Clamp01(comp.WorkDone / comp.WorkRequired);
+                if (comp == null || comp.CurrentOrder == null || comp.CurrentOrder.WorkRequired <= 0f) return 1f;
+                return Mathf.Clamp01(comp.CurrentOrder.WorkDone / comp.CurrentOrder.WorkRequired);
             });
 
             yield return work;

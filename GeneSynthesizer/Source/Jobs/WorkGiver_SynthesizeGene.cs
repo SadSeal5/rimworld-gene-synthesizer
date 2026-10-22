@@ -29,7 +29,7 @@ namespace SadSeal.GeneSynthesizer.Jobs
             }
 
             CompGeneSynthesizer comp = t.TryGetComp<CompGeneSynthesizer>();
-            if (comp == null || !comp.IsSynthesizing || comp.TargetGene == null)
+            if (comp == null || !comp.IsSynthesizing || comp.CurrentOrder == null)
             {
                 return false;
             }
@@ -46,7 +46,7 @@ namespace SadSeal.GeneSynthesizer.Jobs
                 return false;
             }
 
-            if (comp.innerContainer.TotalStackCount < comp.NeutroamineCost)
+            if (comp.innerContainer.TotalStackCount < comp.CurrentOrder.NeutroamineCost)
             {
                 Thing neutro = FindNeutroamine(pawn);
                 if (neutro == null)
@@ -67,12 +67,12 @@ namespace SadSeal.GeneSynthesizer.Jobs
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             CompGeneSynthesizer comp = t.TryGetComp<CompGeneSynthesizer>();
-            if (comp == null || !comp.IsSynthesizing || comp.TargetGene == null)
+            if (comp == null || !comp.IsSynthesizing || comp.CurrentOrder == null)
             {
                 return null;
             }
 
-            if (comp.innerContainer.TotalStackCount < comp.NeutroamineCost)
+            if (comp.innerContainer.TotalStackCount < comp.CurrentOrder.NeutroamineCost)
             {
                 Thing neutro = FindNeutroamine(pawn);
                 if (neutro == null)
@@ -80,7 +80,7 @@ namespace SadSeal.GeneSynthesizer.Jobs
                     return null;
                 }
 
-                int needed = comp.NeutroamineCost - comp.innerContainer.TotalStackCount;
+                int needed = comp.CurrentOrder.NeutroamineCost - comp.innerContainer.TotalStackCount;
                 Job haulJob = JobMaker.MakeJob(GeneJobDefOf.HaulNeutroamineToGeneAssembler, t, neutro);
                 haulJob.count = Mathf.Min(needed, neutro.stackCount);
                 return haulJob;
