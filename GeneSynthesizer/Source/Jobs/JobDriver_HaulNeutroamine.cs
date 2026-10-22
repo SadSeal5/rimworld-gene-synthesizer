@@ -68,6 +68,11 @@ namespace SadSeal.GeneSynthesizer.Jobs
                             comp.FinishCurrentOrder();
                         }
                     }
+
+                    if (carried.stackCount > 0)
+                    {
+                        pawn.carryTracker.TryDropCarriedThing(pawn.Position, ThingPlaceMode.Near, out _);
+                    }
                 }
             };
             deposit.defaultCompleteMode = ToilCompleteMode.Instant;

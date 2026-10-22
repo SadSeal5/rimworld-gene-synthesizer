@@ -5,7 +5,7 @@
     <label>synthesize genes</label>
     <giverClass>SadSeal.GeneSynthesizer.Jobs.WorkGiver_SynthesizeGene</giverClass>
     <workType>Research</workType>
-    <priorityInType>115</priorityInType>
+    <priorityInType>125</priorityInType>
     <verb>synthesize gene</verb>
     <gerund>synthesizing gene at</gerund>
     <requiredCapacities>

@@ -49,7 +49,9 @@ namespace SadSeal.GeneSynthesizer.Jobs
                     return;
                 }
 
-                float speed = actor.GetStatValue(StatDefOf.ResearchSpeed);
+                actor.rotationTracker.FaceTarget(building);
+
+                float speed = actor.GetStatValue(StatDefOf.ResearchSpeed) * (StatDefOf.AssemblySpeedFactor != null ? building.GetStatValue(StatDefOf.AssemblySpeedFactor) : 1f);
                 comp.CurrentOrder.WorkDone += speed;
                 actor.skills?.Learn(SkillDefOf.Intellectual, 0.05f);
                 actor.GainComfortFromCellIfPossible(1);
@@ -60,6 +62,9 @@ namespace SadSeal.GeneSynthesizer.Jobs
                     actor.jobs.EndCurrentJob(JobCondition.Succeeded);
                 }
             };
+            work.handlingFacing = true;
+            work.activeSkill = () => SkillDefOf.Intellectual;
+            work.FailOnCannotTouch(AssemblerIndex, endMode);
             work.defaultCompleteMode = ToilCompleteMode.Never;
             work.WithEffect(EffecterDefOf.GeneAssembler_Working, AssemblerIndex);
             work.WithProgressBar(AssemblerIndex, () =>
